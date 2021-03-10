@@ -11,7 +11,7 @@ body {
   height: 100vh;
   background-color: #222;
   color: #eee;
-  font-family: Roboto Mono, sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
 }
 
 header {
@@ -25,26 +25,34 @@ header {
   align-items: center;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 main {
   width: 80%;
   max-width: 800px;
   margin: auto;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
-  color: #0088FF;
+  color: #0088ff;
 }
 
-span {
-  font-weight: bold;
+.cmd-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cmd-name {
+  font-size: 1.3rem;
+}
+
+.cmd-desc {
+  font-size: 1rem;
+  margin: 1rem;
 }
 
 @media (max-width: 700px) {
@@ -61,30 +69,12 @@ span {
   h1 {
     font-size: 1.3rem;
   }
+
+  .cmd-name {
+    font-size: 1rem;
+  }
+
+  .cmd-desc {
+    font-size: 0.8rem;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
